@@ -156,6 +156,22 @@ body{
         padding-right: 0;
     }
 }
+/* ESTRELLAS COPA DEL MUNDO */
+.estrellas{
+    display:inline-block;
+    white-space:normal;      /* permite saltar de línea */
+    line-height:1.2;
+}
+
+/* SOLO EN CELULAR */
+@media (max-width:768px){
+    .estrellas{
+        font-size:0.85em;   /* estrellas un poco más pequeñas */
+        max-width:80px;     /* evita desbordes */
+        text-align:right;
+    }
+}
+``
 </style>
 </head>
 
@@ -264,8 +280,9 @@ body{
 <img src="Imagenes/mundial.png">
 <div class="info">
 <h3>Copa del Mundo</h3>
-<div class="fila"><span>Jesús</span><span>7 ⭐⭐⭐⭐
-    ⭐⭐⭐</span></div>
+<div class="fila">
+    <span>Jesús</span>
+    <span class="Estrellas">7 ⭐⭐⭐⭐⭐⭐⭐</span></div>
 <div class="fila"><span>Sebastián</span><span>3 ⭐⭐⭐</span></div>
 <div class="fila"><span>David</span><span>2 ⭐⭐</span></div>
 </div></div>
