@@ -97,9 +97,9 @@ body{
 .ranking-doble{
     display:flex;
     gap:30px;
-    align-items:center;
+    align-items:flex-start;   /* 🔥 CLAVE */
     justify-content:space-between;
-    flex-wrap:wrap;
+    min-height:220px;         /* mantiene estabilidad */
 }
 
 .ranking-lista{
@@ -111,6 +111,7 @@ body{
     background:linear-gradient(135deg,#ffd700,#ffae00);
     color:black;
     border-radius:18px;
+    min-width:220px;
     padding:18px;
     text-align:center;
     box-shadow:0 0 30px rgba(255,215,0,.7);
