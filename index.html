@@ -93,6 +93,69 @@ body{
 
 .temporada{display:none;}
 .temporada.activa{display:block;}
+/* ===================================== */
+/* RANKING CON BALÓN DE ORO FLOTANTE */
+/* ===================================== */
+
+.ranking-con-balon{
+    position: relative;        /* referencia del flotante */
+    padding-right: 260px;      /* espacio fijo reservado */
+}
+
+/* ranking normal: nunca cambia */
+.ranking-lista{
+    font-size: 18px;
+}
+
+/* tarjeta flotante */
+.balon-flotante{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 220px;
+    background: linear-gradient(135deg,#ffd700,#ffb300);
+    color: black;
+    border-radius: 18px;
+    padding: 16px;
+    text-align: center;
+
+    box-shadow: 0 0 25px rgba(255,215,0,.6);
+}
+
+/* imagen del balón */
+.balon-flotante img{
+    width: 55px;
+    margin-bottom: 8px;
+}
+
+/* textos */
+.balon-titulo{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.balon-ganador{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.balon-temp{
+    font-size: 13px;
+}
+@media (max-width: 768px){
+    .balon-flotante{
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .ranking-con-balon{
+        padding-right: 0;
+    }
+}
 </style>
 </head>
 
@@ -115,11 +178,25 @@ body{
 <!-- =================================================== -->
 <div id="t2324" class="temporada activa">
 
-<div class="ranking">
-<div>🥇 Sebastián--> 46 títulos</div>
-<div>🥈 Jesús------> 40 títulos</div>
-<div>🥉 David------>  6 títulos</div>
+<div class="ranking ranking-con-balon">
+
+    <!-- RANKING NORMAL (NO SE MUEVE) -->
+    <div class="ranking-lista">
+        <div>🥇 Sebastián — 46 títulos</div>
+        <div>🥈 Jesús — 40 títulos</div>
+        <div>🥉 David — 6 títulos</div>
+    </div>
+
+    <!-- BALÓN DE ORO (TARJETA FLOTANTE) -->
+    <div class="balon-flotante">
+        <img src="Imagenes/balon_oro.png" alt="Balón de Oro">
+        <div class="balon-titulo">Balón de Oro</div>
+        <div class="balon-ganador">Sebastián</div>
+        <div class="balon-temp">Temporada 2023‑24</div>
+    </div>
+
 </div>
+``
 
 <div class="seccion">🕹️ A NIVEL DE CLUBES 👾</div>
 <div class="grid">
@@ -209,11 +286,25 @@ body{
 <!-- =================================================== -->
 <div id="t2425" class="temporada">
 
-<div class="ranking">
-<div>🥇 Jesús------> 47 títulos</div>
-<div>🥈 Sebastián--> 42 títulos</div>
-<div>🥉 David------>  9 títulos</div>
+<div class="ranking ranking-con-balon">
+
+    <!-- RANKING NORMAL (NO SE MUEVE) -->
+    <div class="ranking-lista">
+        <div>🥇 Sebastián — 46 títulos</div>
+        <div>🥈 Jesús — 40 títulos</div>
+        <div>🥉 David — 6 títulos</div>
+    </div>
+
+    <!-- BALÓN DE ORO (TARJETA FLOTANTE) -->
+    <div class="balon-flotante">
+        <img src="Imagenes/balon_oro.png" alt="Balón de Oro">
+        <div class="balon-titulo">Balón de Oro</div>
+        <div class="balon-ganador">Sebastián</div>
+        <div class="balon-temp">Temporada 2023‑24</div>
+    </div>
+
 </div>
+``
 
 <div class="seccion">🕹️ A NIVEL DE CLUBES 👾</div>
 <div class="grid">
@@ -312,12 +403,25 @@ body{
 <!-- =================================================== -->
 <div id="t2526" class="temporada">
 
-<div class="ranking">
-<div>🥇 Sebastián--> 26 títulos</div>
-<div>🥈 Jesús------> 16 títulos</div>
-<div>🥉 David------>  1 título</div>
+<div class="ranking ranking-con-balon">
+
+    <!-- RANKING NORMAL (NO SE MUEVE) -->
+    <div class="ranking-lista">
+        <div>🥇 Sebastián — 46 títulos</div>
+        <div>🥈 Jesús — 40 títulos</div>
+        <div>🥉 David — 6 títulos</div>
+    </div>
+
+    <!-- BALÓN DE ORO (TARJETA FLOTANTE) -->
+    <div class="balon-flotante">
+        <img src="Imagenes/balon_oro.png" alt="Balón de Oro">
+        <div class="balon-titulo">Balón de Oro</div>
+        <div class="balon-ganador">Sebastián</div>
+        <div class="balon-temp">Temporada 2023‑24</div>
+    </div>
 
 </div>
+``
 
 <div class="seccion">🕹️ A NIVEL DE CLUBES 👾</div>
 <div class="grid">
